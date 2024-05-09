@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="equipes" >
+        <item>Redbull</item>
+        <item>Ferrari</item>
+        <item>McLaren</item>
+        <item>Mercedes</item>
+        <item>Aston Martin</item>
+        <item>Kick</item>
+        <item>Haas</item>
+        <item>Visa Cashapp</item>
+        <item>Alpine</item>
+        <item>Williams</item>
+    </string-array>
+</resources>

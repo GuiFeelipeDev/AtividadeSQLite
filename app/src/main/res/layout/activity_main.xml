@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.61">
+
+
+
+        <EditText
+            android:id="@+id/gp_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:paddingHorizontal="6dp"
+            android:inputType="textPersonName"
+            android:hint="@string/tf_gpname"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:background="@drawable/custom_input"
+            android:textSize="14sp" />
+        <EditText
+            android:id="@+id/winner_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:paddingHorizontal="6dp"
+            android:inputType="textPersonName"
+            android:hint="@string/tf_winner"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:background="@drawable/custom_input"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_team"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            />
+        <Spinner
+            android:id="@+id/team"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:entries="@array/equipes"
+            android:background="@color/gray"
+            />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_gap"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            />
+
+
+        <RadioGroup
+            android:id="@+id/leader_gap"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:buttonTint="@color/red"
+                android:text="Mais de 10 segundos" />
+
+            <RadioButton
+                android:id="@+id/radioButton1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:buttonTint="@color/red"
+                android:text="Menos de 10 segundos" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_checklist"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            />
+
+        <CheckBox
+            android:id="@+id/crash"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Teve batida"
+            android:buttonTint="@color/red"
+            android:textColor="@color/black"
+            />
+        <CheckBox
+            android:id="@+id/vespa_win"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/red"
+            android:text="Verstappen venceu"
+            android:textColor="@color/black"
+            />
+        <CheckBox
+            android:id="@+id/bagre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/red"
+            android:text="Sargeant não pontuou"
+            android:textColor="@color/black"
+            />
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            >
+            <Button
+                android:id="@+id/submit_button"
+                android:layout_width="130dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/custom_button"
+                android:text="@string/btn_cadastrar"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_marginRight="10dp"/>
+            <Button
+                android:id="@+id/seecads_button"
+                android:layout_width="130dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/custom_button_red"
+                android:text="@string/btn_seecads"
+                android:textSize="14sp"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="181dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="64dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/main"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.692"
+        app:srcCompat="@mipmap/logo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

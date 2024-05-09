@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">appCadastro</string>
+    <string name="tf_gpname">Nome do GP</string>
+    <string name="tf_winner">Vencedor</string>
+    <string name="tv_checklist">Checklist fim de semana:</string>
+    <string name="tv_gap">Diferença do Lider:</string>
+    <string name="tv_team">Equipe Vencedora:</string>
+    <string name="btn_cadastrar">Cadastrar</string>
+    <string name="btn_seecads">Ver Cadastros</string>
+</resources>
